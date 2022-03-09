@@ -1,13 +1,12 @@
 package repository;
 
 import io.micronaut.data.annotation.Join;
-import io.micronaut.data.annotation.Repository;
 import io.micronaut.data.jdbc.annotation.JdbcRepository;
 import io.micronaut.data.model.query.builder.sql.Dialect;
 import io.micronaut.data.repository.CrudRepository;
 import model.Hero;
 import model.Race;
-import model.SomethingIstrument;
+import model.SomethingInstrument;
 
 import java.util.Optional;
 
@@ -15,7 +14,7 @@ import java.util.Optional;
 public interface HeroRepository extends CrudRepository<Hero, Long> {
 
     @Join("race")
-    @Join("somethingIstrument")
-    Optional<Hero> findByRaceAndSomethingIstrument(Race race, SomethingIstrument somethingIstrument);
+    @Join("somethingInstrument")
+    Optional<Hero> findByRaceAndSomethingInstrument(Race race, SomethingInstrument somethingInstrument);
 
 }

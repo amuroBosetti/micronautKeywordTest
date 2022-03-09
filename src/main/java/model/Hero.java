@@ -11,8 +11,8 @@ public class Hero {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "something_istrument_id")
-    private SomethingIstrument somethingIstrument;
+    @JoinColumn(name = "something_instrument_id")
+    private SomethingInstrument somethingInstrument;
 
     @ManyToOne
     @JoinColumn(name = "race_id")
@@ -30,7 +30,7 @@ public class Hero {
         return race;
     }
 
-    public SomethingIstrument getSomethingIstrument() {
-        return somethingIstrument;
+    public SomethingInstrument getSomethingIstrument() {
+        return somethingInstrument;
     }
 }

@@ -3,8 +3,8 @@ package model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "something_istrument")
-public class SomethingIstrument {
+@Table(name = "something_instrument")
+public class SomethingInstrument {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,7 +13,7 @@ public class SomethingIstrument {
     @Column(name = "name")
     private String name;
 
-    public SomethingIstrument(String name) {
+    public SomethingInstrument(String name) {
         this.name = name;
     }
 
